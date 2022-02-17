@@ -29,7 +29,7 @@
 // dropCap('ALL CAPS CRAZINESS')                                                                -->  "All Caps Craziness
 // dropCap('rAnDoM CaPs CrAzInEsS')                                                             -->  "Random Caps Craziness
 // pseudocode: split string to manipulate array. each element of array needs to be checked if length is longer than 2
-// use map to iterate through each array element. if longer than 2, capitalize word. else just leave word alone. 
+// map to iterate through each array element. if longer than 2, capitalize word. else just leave word alone. 
 // capitalize first letter and concatenate with rest of string lowercased.
 // return the array as a string. join elements on a space
 
