@@ -9,7 +9,7 @@
 // ----------------------
 // parameters: two letters given and must check if same case
 // return 1, 0 or -1
-// Examples
+// examples
 // 'a' and 'g' returns 1
 // 'A' and 'C' returns 1
 // 'b' and 'G' returns 0
