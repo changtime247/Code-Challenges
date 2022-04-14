@@ -21,7 +21,8 @@
 // repeatIt("Hello",11) --> "HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello"
 
 // pseudocode: if str is truthy value, return str repeated n times. else return 'Not a string'
+// typeof will check if the str is indeed a str before repeating it. otherwise, return deafult statement
 
 var repeatIt = function(str, n) {
-    return str ? str.repeat(n) : 'Not a string';
+    return typeof str == 'string' ? str.repeat(n) : "Not a string"
 }
