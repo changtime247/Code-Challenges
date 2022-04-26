@@ -31,12 +31,15 @@
 // a number representing weight in lbs,
 // a string representing sex,
 // and a number representing number of hours passed since last drinking.
+
 // return: BAC%
-// examples
+
+// examples:
 // bloodAlcoholContent({ounces:12.5, abv:0.4}, 190, 'male', 1)       -->     0.0837
 // bloodAlcoholContent({ounces:180, abv:0.05}, 160,'female', 1)      -->     0.1758
 // bloodAlcoholContent({ounces:50, abv:0.14}, 250,'male', 3)         -->     0.0601
 // bloodAlcoholContent({ounces:20, abv:0.4}, 100,'female', 2)        -->     0.2414
+
 // pseudocode: essentially this function will reproduce the formula, which is provided in the link in the description, in JS
 // the only two parameters that needs to be manipulated before being fed into the formula are (1) the object and (2) the string
 // use dot notation to access object values
