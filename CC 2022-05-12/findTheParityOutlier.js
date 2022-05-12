@@ -30,6 +30,7 @@
 // if value is 1, then we know that the outlier is an odd number
 // otherwise, if value is not 1, the outlier is even
 // using findIndex, locate the index of outlier and use bracket notation to find the value of the index of the original parameter
+// return the value at that index
 
 function findOutlier(integers){
     let sliced = integers.slice().map(x=>Math.abs(x%2));
