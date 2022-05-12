@@ -1,3 +1,4 @@
+// 8 kyu
 // A Strange Trip to the Market
 // You're on your way to the market when you hear beautiful music coming from a nearby street performer. The notes come together like you wouln't believe as the musician puts together patterns of tunes. As you wonder what kind of algorithm you could use to shift octaves by 8 pitches or something silly like that, it dawns on you that you have been watching the musician for some 10 odd minutes. You ask, "how much do people normally tip for something like this?" The artist looks up. "It's always gonna be about tree fiddy."
 // It was then that you realize the musician was a 400 foot tall beast from the paleolithic era! The Loch Ness Monster almost tricked you!
@@ -16,5 +17,5 @@ function isLockNessMonster(s) {
     let a = "tree fiddy",
         b = "3.50",
         c = "three fifty";
-    return s.includes(a) || s.includes(b) || s.includes(c)
+    return s.includes(a) || s.includes(b) || s.includes(c);
 }

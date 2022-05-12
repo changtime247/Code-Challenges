@@ -1,4 +1,5 @@
-// #To square(root) or not to square(root)
+// 8 kyu
+// To square(root) or not to square(root)
 
 // Write a method, that will get an integer array as parameter and will process every number from this array.
 // Return a new array with processing every number of the input-array like this:
