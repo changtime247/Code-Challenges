@@ -1,6 +1,6 @@
 # curly-wafflefries-everyday
 
-# CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/" >Visit Here</a> 
+# CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/">Visit Here</a> 
 
 I'm a fastfood and codewars junkie. I use one as an excus.erm... reward for the other. Hence the name. But no fries here. Just a repository full of codewars challenges. Completed over 500+ challenges and push solutions everyday.
 
@@ -16,4 +16,4 @@ Sometimes, refrying can heighten the crispiness level. So is refactoring for jui
 
 ## Lessons Learned:
 
-Can't ever stop with one fry.
+Can't ever stop with one fry. 🍟
