@@ -33,8 +33,8 @@
 // The input array will always be valid and formatted as in the example above.
 
 // ----------------------
-// Parameters: Given string representing a sentence. Within sentence, only one word will have its first letter capitalized. 
-// Return the sentence with same words in same order, except that one capitalized word should be the first word of sentence
+// Parameters: Given an array of objects, representing persons with various properties.
+// Return the same array but with an added property of 'greeting' for each object in array
 // Examples:
 // input --> output
 // greetDevelopers([
