@@ -16,29 +16,25 @@
 // The input array will always be valid and formatted as in the example above.
 // Age is represented by a number which can be any positive integer.
 
-
-
-
-// This kata is part of the Coding Meetup series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: forEach, filter, map, reduce, some, every, find, findIndex. Other approaches to solving the katas are of course possible.
-
 // ----------------------
 // Parameters: Given an array of objects, representing persons with various properties.
-// Return parameter but with an additional property added to each object of parameter array
-// additional property name is username and value is composed of combinations of values derived from properties firstName, lastName, and age
-// return parameter
+// Return numeric value representing the average age of persons of list
 // Examples:
-// addUsername([
+// getAverageAge([
 //     { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby' },
 //     { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure' }
-// ]) -->   
-// [
-//     { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby', 
-//       username: 'emilyn1990' },
-//     { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure', 
-//       username: 'nore2000' }
-// ]
-// Pseudocode: iterate through each element of array using forEach method
-// create new property of each element/ object of array. 
-// use dot notation to give each object the new property username with value derived from:
-// entire firstName value in lowecase + first letter of lastName in lowercase + difference new Date object from age
-// return the array
+// ]) -->   25
+// getAverageAge([
+//     { firstName: 'Maria', lastName: 'Y.', country: 'Cyprus', continent: 'Europe', age: 30, language: 'Java' },
+//     { firstName: 'Victoria', lastName: 'T.', country: 'Puerto Rico', continent: 'Americas', age: 70, language: 'Python' },
+// ]) --> 50  
+// Pseudocode: use reduce method to get single value back from array
+// use dot notation to get age of each object
+// add to accumulator
+// initial value set at 0
+// divide reduce return value by number of persons on list
+// Use Math.round on entire expression and return 
+
+function getAverageAge(list) {
+    return Math.round(list.reduce((a,k)=>a+=k.age,0)/list.length);
+}
