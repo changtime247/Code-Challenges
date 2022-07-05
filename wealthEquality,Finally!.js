@@ -31,14 +31,10 @@
 // Parameter: Given an array of numbers representing the wealth of the citizens.
 // No return expected. Instead modify the array to make it so that each citizen (i.e. the value at every index) has the same level of wealth.
 // Examples:
-// twoSum([[1, 2, 3], 4)                   -->     [0, 2]]
-// twoSum([[1234, 5678, 9012], 14690)      -->     [1, 2]]
-// twoSum([[2, 2, 3], 4)                   -->     [0, 1]]
-// twoSum([[2, 3, 1], 4)                   -->     [1, 2]]
-// twoSum([-689, 398, 643, 597, 501, -106, -411, 136, 636, -501, -436, 354, 498], -188)
-//                                         -->     [ 0, 4 ]
-// twoSum([-652, 261, -206, -165, -966, 245, -39, -503, 76, -675, 302, -925, 178, 821, -714, -302, 717, 826, 984, -388, -41, 781], 678)
-//                                         -->     [ 6, 16 ]
+// redistributeWealth([5,5,5,5,5])     -->  [5,5,5,5,5]
+// redistributeWealth([0, 10])         -->  [5,5]
+// redistributeWealth([5])             -->  [5]
+// redistributeWealth([3,2,2])         -->  [2.3333333333333335,2.3333333333333335, 2.3333333333333335]
 // Pseudocode:
 // Find total wealth of array and divide by length of array. This is the wealth equality number (which is the same for each person).
 // Modify array such that every value is replaced with the wealth equality number.
