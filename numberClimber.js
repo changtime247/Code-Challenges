@@ -14,8 +14,6 @@
 // climb(1)   -->  [1]
 // climb(10)  -->  [1, 2, 5, 10]
 // climb(13)  ->  [13] -> [6, 13] -> [3, 6, 13] --> [1, 3, 6, 13]
-//              
-[1, 3, 6, 13]
 // Pseudocode: 
 // Create empty array.
 // Array will hold all values from n to 1 (working backwards)
