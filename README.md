@@ -1,8 +1,6 @@
 ## Code Challenges
 
----
-
-### Content
+### Content: 
 
 Just a repo with some coding challenges and solutions from [CodeWars](https://www.codewars.com) and [LeetCode](https://www.leetcode.com).
 
