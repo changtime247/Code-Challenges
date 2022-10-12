@@ -44,6 +44,15 @@ Return the sum of the two numbers (unreversed, of course)
 Example: addTwoNumbers([2,4,3],[5,6,4]), (807)
 */
 
+/*
+given two arrays representing a positive numbers' digits but in reverse
+return sum of two nums and return as array
+create a variable initialized to 0
+iterate through the length of the longer array and add the sum of the values at the indices i
+when adding, make sure you are accounting for units digit, tens digit, etc.
+return the number as an array (not reversed)
+*/
+
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
@@ -57,6 +66,6 @@ Example: addTwoNumbers([2,4,3],[5,6,4]), (807)
  * @return {ListNode}
  */
 
-var addTwoNumbers = function (l1, l2) {
+ var addTwoNumbers = function (l1, l2) {
     
 }
