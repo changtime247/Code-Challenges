@@ -60,12 +60,40 @@ return the number as an array (not reversed)
  *     this.next = (next===undefined ? null : next)
  * }
  */
-/**
+/*
  * @param {ListNode} l1
  * @param {ListNode} l2
  * @return {ListNode}
  */
 
- var addTwoNumbers = function (l1, l2) {
-    
+/*
+Given two linked lists representing a number's individual digits in reverse order
+Return a linked list found by summing the two linked lists (but do not return in reverse order)
+ex: 
+addTwoNumbers(l1=[1,2,3],l2=[2,4,6]), 953
+addTwoNumbers(l1=[3,5,7],l2=[2,4,6]), 1395
+Create a new node list with the head initialized to 0
+Iterate through entirety of both node lists
+Add values at the head are the ones digits, next to head are tens digits, next next are hundreds and so on...
+Once done, return the reverse of that, which will be node list in non-reverse order
+*/
+
+var addTwoNumbers = function (l1, l2) {
+  let carry = 0
+  let result = new ListNode(-1)
+  let dummy = result
+
+  while (l1 || l2 || carry) {
+    let l1Val = l1 ? l1.val : 0
+    let l2Val = l2 ? l1.val : 0
+    let nextDigit = (l1Val + l2Val + carry) % 10
+    result.next = new ListNode(nextDigit)
+    result = result.next
+
+    carry = Math.floor((l1Val + l2Val + carry) / 10)
+
+    l1= l1? l1.next : null
+    l2= l2? l2.next : null
+  }
+  return dummy.next
 }
