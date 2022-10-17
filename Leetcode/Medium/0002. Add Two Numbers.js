@@ -72,10 +72,13 @@ Return a linked list found by summing the two linked lists (but do not return in
 ex: 
 addTwoNumbers(l1=[1,2,3],l2=[2,4,6]), 953
 addTwoNumbers(l1=[3,5,7],l2=[2,4,6]), 1395
-Create a new node list with the head initialized to 0
-Iterate through entirety of both node lists
-Add values at the head are the ones digits, next to head are tens digits, next next are hundreds and so on...
-Once done, return the reverse of that, which will be node list in non-reverse order
+Create a new ListNode initialized to -1 to serve as a marker after summing the two nodelists
+Create a variable to carry over the possible carryovers from addtion
+while we are still moving from head to tail on either nodelists or if there is a carry from the addition,
+do the following:
+get the sum of the two values and add the units digit of the sum and create a new node with units digit of sum and link to the initially created nodelist
+if the sum is greater than 9, then carry over the 1 in the created variable to add to the next digit
+go the next nodes of both nodelists. If at the end, set to null
 */
 
 var addTwoNumbers = function (l1, l2) {
