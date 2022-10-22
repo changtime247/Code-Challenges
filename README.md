@@ -12,3 +12,7 @@ Everyday, I solve a challenge. A few lessons I have learned:
 
 - It's okay to not know. It's not okay to not care.
 - Sometimes it takes a couple extra hacks to take down a tree.
+
+### Ally with me:
+
+![codewars](https://www.codewars.com/users/changtime247/badges/small)
