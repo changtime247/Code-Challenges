@@ -38,6 +38,7 @@ Return the longest palindrome substring
 Ex: 
 longestPalindrome("babad"), "bab" (or "aba")
 longestPalindrome("cbbd"), "bb"
+Create helper function that simply returns boolean indicating whether string argument passed in is a palindrome
 Iterate through the length of the string in a staggered fashion: 
 Longest palindrome to check will be the string itself.
     If not palindrome, check string without 1 char (not rearraging string)
@@ -51,46 +52,26 @@ Return the string once found since it is asking for the longest
  */
 
 var longestPalindrome = function (s) {
-    let paly = ''
-    let d = 0
-    while(paly.length < 1) {
-        for(let i=0; i<=d; i++){
-            const checkThis = s.slice(i, s.length-d+i)
-            if(isPaly(checkThis)){
-                paly = checkThis
-                break
-            }
-        }
-        d++
+  function isPaly(s) {
+    for (let i = 0; i < Math.floor(s.length / 2); i++) {
+      if (s[i] !== s[s.length - 1 - i]) {
+        return false
+      }
     }
-    return paly || s[0]
+    return true
+  }
+
+  let paly = ''
+  let d = 0
+  while (paly.length < 1) {
+    for (let i = 0; i <= d; i++) {
+      const checkThis = s.slice(i, s.length - d + i)
+      if (isPaly(checkThis)) {
+        paly = checkThis
+        break
+      }
+    }
+    d++
+  }
+  return paly
 }
-const isPaly = (str) => {
-    return str === str.split``.reverse().join``
-}
-
-
-
-// var longestPalindrome = function (s) {
-//   let l = 0
-//   let r = s.slice().length
-//   while (l !== r) {
-//     const sub = s.slice(l, r)
-//     let subL = sub.length
-//     for (let i = 0; i < sub.length / 2; i++) {
-//       if (sub[i] === sub[sub.length - 1 - i]) subL -= 2
-//     }
-//     if (subL <= 0) {
-//       return sub
-//     } else {
-//       if (l === s.length - r) {
-//         r--
-//       } else if (l < s.length - r) {
-//         r++ && l++
-//       } else if (l > s.length - r) {
-//         r -= 2
-//       }
-//     }
-//   }
-//   return s[0]
-// }
