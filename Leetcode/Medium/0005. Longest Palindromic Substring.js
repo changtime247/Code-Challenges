@@ -75,3 +75,12 @@ var longestPalindrome = function (s) {
   }
   return paly
 }
+
+function pairs(k, arr) {                
+  const points = new Set(arr)           
+  let count = 0                         
+  for (let i = 0; i < arr.length; i++) {
+    if (points.has(arr[i] + k)) count++ 
+  }                                     
+  return count                          
+}                                       
