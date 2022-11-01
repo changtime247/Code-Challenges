@@ -6,7 +6,7 @@ Just a repo with some coding challenges and solutions from [CodeWars](https://ww
 
 ### Language: <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
 
-### Lesson Learned:
+### Lessons Learned:
 
 Everyday, I solve a challenge. A few lessons I have learned:
 
