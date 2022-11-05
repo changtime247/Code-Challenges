@@ -47,7 +47,31 @@ Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 /*
 Given two arrays, nums1 and nums2, sorted in non-decreasing order.
-Also given two integers, representing the lengths of the two arrays.
+Also given two integers, m and n, representing the lengths of the two arrays, respectively.
 Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-
+We need to iterate through the entire nums2 array.
+Create a loop to iterate through nums2 from right to left (highest value to lowest).
+If num2's rightmost value is greater than num1's rightmost value, then set the last value of num1 to be num2's right most value. Decrement m.
+Otherwise, set num1's rightmost value to num1's highest value (disregarding the 0s). Decrement n.
 */
+
+/**
+ * @param {number[]} nums1
+ * @param {number} m
+ * @param {number[]} nums2
+ * @param {number} n
+ * @return {void} Do not return anything, modify nums1 in-place instead.
+ */
+var merge = function (nums1, m, nums2, n) {
+  let idx = m + n - 1
+  while (n > 0) {
+    if (m > 0 && nums1[m - 1] > nums2[n - 1]) {
+      nums1[idx] = nums1[m - 1]
+      m--
+    } else {
+      nums1[idx] = nums2[n - 1]
+      n--
+    }
+    idx--
+  }
+}
