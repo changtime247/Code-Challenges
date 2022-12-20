@@ -29,7 +29,6 @@ Return an array of numbers representing the number of day(s) that need to pass f
     (if daily temp does not eventually get warmer, array value should be 0)
 Create a variable set to an empty array.
 Iterate through array:
-    
 Find the difference between indices of next warmer temperature and current temperature.
     If no future warmer temperature (or if last item in array), then 0.
 */
@@ -53,24 +52,3 @@ var dailyTemperatures = function (temperatures) {
   }
   return [...daysToWait, 0]
 }
-
-var dailyTemperatures = function(t) {
-    const stack = []
-    const res = Array(t.length).fill(0)
-    
-    for (let i = 0; i < t.length; i++) {
-        while (stack.length && t[i] > t[stack[stack.length - 1]]) {
-            const idx = stack.pop()
-            res[idx] = i - idx
-        }
-        stack.push(i)
-    }
-    
-    return res
-};
-
-
-// [30,40,50,60]
-// []
-// [0]
-// [0]
