@@ -18,7 +18,7 @@
 // Create a new object.
 // Iterate through all possible arg-object entries. At each iteration:
 //      if the difference is smaller than new object's difference, re-set the new object to contain iteration's key-value pair.
-// Return the value of key-value pair in new object.
+// Return the key of key-value pair of the new object.
 
 function nexus(users) {
   let nexus = { difference: Number.MAX_SAFE_INTEGER }
