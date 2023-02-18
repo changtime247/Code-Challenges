@@ -11,7 +11,7 @@
 // findDup([1,2,2,3]), 2
 // findDup([1,3,2,5,4,5,7,6]), 5
 // Iterate through array and check if indexOf(value) !== lastIndexOf(value)
-// Return that value
+// Return the first value of above condition.
 
 function findDup(arr) {
   let dupe = null
