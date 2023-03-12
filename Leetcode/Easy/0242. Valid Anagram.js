@@ -32,14 +32,14 @@ Iterate through entire length of either string.
 Return whether the two resulting arrays are exactly the same.
 */
 
-var isAnagram = function (s, t) {
-  if (s.length !== t.length) return false
-  let sArr = Array(26).fill(0)
-  let tArr = Array(26).fill(0)
-  for (let i = 0; i < s.length; i++) {
-    sArr[s.charCodeAt(i) - 97] += 1
-    tArr[t.charCodeAt(i) - 97] += 1
-  }
+var isAnagram = function (s, t) {             
+  if (s.length !== t.length) return false     
+  let sArr = Array(26).fill(0)                
+  let tArr = Array(26).fill(0)                
+  for (let i = 0; i < s.length; i++) {        
+    sArr[s.charCodeAt(i) - 97] += 1           
+    tArr[t.charCodeAt(i) - 97] += 1           
+  }                                           
   if (sArr.join`` === tArr.join``) return true
-  else return false
-}
+  else return false                           
+}                                             
