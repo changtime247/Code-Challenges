@@ -32,7 +32,7 @@
 // Create an empty array variable, stack.
 // Iterate through arg-string:
 //      if char is "(" then push onto stack;
-//      if char is ")" pop stack
+//      if char is ")" pop stack;
 //      If char is ")" and stack is empty, we can return false
 
 function validParentheses(parenStr) {
