@@ -36,6 +36,7 @@ function grid(N) {
   let abc = 'abcdefghijklmnopqrstuvwxyz'
   let res = ''
   let len = N
+  if (N > 13) abc = abc.repeat(~~(N / 13) + 1)
   while (len > 0) {
     res += abc
       .slice(N - len, N + (N - len))
